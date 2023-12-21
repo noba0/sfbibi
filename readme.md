@@ -22,24 +22,23 @@ Pour effectuer les migration :
 Ensuite migrate :
 ->symfony console doctrine:migrations:migrate
 
-
 6. ***Création des controllers Books et Users**
 ->symfony console make:controller
 
 7. ***Création des controllers pour l’authentification des users***
 -> symfony console make:Auth (à personnaliser selon vos besoins)
--> symfony console make:registration-form : pour avoir une formaulaire d'inscription
+-> symfony console make:registration-form : pour avoir une formaulaire d'inscription ***
 Next:
 ***Pour installer les paquets manquants pour votre register :*** 
 -> composer require symfonycasts/verify-email-bundle
 
 ***Exécutez***
--> symfony console make:migration pour générer une migration pour la propriété User::isVerified nouvellement ajoutée dans "RegistrationController::verifyUserEmail()".
+-> symfony console make:migration pour générer une migration pour la propriété User::isVerified nouvellement ajoutée dans "RegistrationController::verifyUserEmail()". ***
 
-8. ***Pour ajouter les fausses données dans la base de donnée* via des fixtures et faker***
+8. ***Pour ajouter les fausses données dans la base de donnée* via des fixtures et faker**
 
 **Fixtures** : commencer d’abord par l'installation du bundle avec la cmmd
-->composer require --dev orm-fixtures,
+->composer require --dev orm-fixtures **
 
 puis par l’ajout de classes ->symfony console make:fixtures et**
 

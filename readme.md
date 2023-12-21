@@ -13,10 +13,10 @@ Pour créer la base de donnée :
 ->symfony console doctrine:database:create
 
 4. ***Création des entités Books et Users**
-->symfony make:entity Books et symfony make:user pour avoir un package user pour complet
+->symfony console make:entity Books et symfony console make:user pour avoir un package user pour complet
 
 5. ***Création des cruds Books et users (propriétés à determiner selon besoin)**
- ->symfony make:crud
+ ->symfony console make:crud
 Pour effectuer les migration :
 ->symfony console make:migration
 Ensuite migrate :
@@ -24,7 +24,7 @@ Ensuite migrate :
 
 
 6. ***Création des controllers Books et Users**
-->symfony make:controller
+->symfony console make:controller
 
 7. ***Création des controllers pour l’authentification des users***
 ->symfony make:Auth (à personnaliser selon vos besoins)

@@ -39,10 +39,14 @@ Next:
 
 **Fixtures** : commencer d’abord par l'installation du bundle avec la cmmd
 ->composer require --dev orm-fixtures **
+Charger vos fausses données dans la base de donnée avec : ***
+->composer require fakerphp/faker
 
-puis par l’ajout de classes ->symfony console make:fixtures et**
+puis par l’ajout de classes ***
+->symfony console make:fixtures et**
 
-enfin charger vos fausses données dans la base de donnée ->symfony console doctrine:fixtures:load ou **
+enfin charger vos fixtures avec ***
+->symfony console doctrine:fixtures:load ou **
 
 avec la cmmd ->symfony console doctrine:fixtures:load --append
 si vous ne voulez pas écraser vos données charger plus tot **

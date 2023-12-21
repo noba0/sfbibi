@@ -27,7 +27,14 @@ Ensuite migrate :
 ->symfony console make:controller
 
 7. ***Création des controllers pour l’authentification des users***
-->symfony make:Auth (à personnaliser selon vos besoins)
+-> symfony console make:Auth (à personnaliser selon vos besoins)
+-> symfony console make:registration-form : pour avoir une formaulaire d'inscription
+Next:
+***Pour installer les paquets manquants pour votre register :*** 
+-> composer require symfonycasts/verify-email-bundle
+
+***Exécutez***
+-> symfony console make:migration pour générer une migration pour la propriété User::isVerified nouvellement ajoutée dans "RegistrationController::verifyUserEmail()".
 
 8. ***Pour ajouter les fausses données dans la base de donnée* via des fixtures et faker***
 
